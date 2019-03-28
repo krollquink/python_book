@@ -31,12 +31,17 @@ Kebiasaanya, kebanyakan distribution Linux sudah didatangi dengan Python sudah p
 
 \begin{enumerate}
 	\item Buka terminal anda melalui \textbf{Application} > \textbf{Terminal} 
-	\item Taip di terminal command seperti dibawah
+	\item Taip di terminal command seperti dibawah untuk melihat Python sudah di install di dalam sistem ataupun tidak
 		\begin{lstlisting}[language=bash]
-		  $ wget http://tex.stackexchange.com
+$ python --version
+Python 3.7.2
 		\end{lstlisting}
-
-
+	\item Guna command di bawah ini untuk install Python di dalam Ubuntu
+		\begin{lstlisting}[language=bash]
+$ sudo apt update
+$ sudo apt upgrade
+$ sudo apt install python python-dev
+		\end{lstlisting}
 \end{enumerate}
 
 \subsection{}
@@ -46,3 +51,25 @@ Cara Install Python di dalam Mac
 Seperti Linux, Mac juga adalah Operating System yang Unix-like yang mempunyai command line tool yang mudah untuk installation python. Dengan mengunakan package manager Homebrew , pengguna Mac dapat membuat installation Python 3 dengan mudah.
 Homebrew tidak terdapat secara default di dalam sesuatu komputer Mac , maka buku ini juga akan mengajar sedikit cara untuk menginstall Homebrew di dalam Mac dan menggunakan Homebrew untuk membuat installation Python.
 
+\begin{enumerate}
+	\item Buka terminal anda \textbf{Application} > \textbf{Terminal} 
+	\item Jika anda sudah mempunyai Homebrew boleh terus melangkah ke step 4 . Jika tidak , install Homebrew dengan mengunakan command di bawah. 
+		\begin{lstlisting}[language=bash]
+$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/
+Homebrew/install/master/install)"
+		\end{lstlisting}
+	\item ubah .profile anda dan tambah command di bawah ini supaya boleh mengunakan Homebrew di dalam Terminal. 
+		\begin{lstlisting}[language=bash]
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+		\end{lstlisting}
+	\item Install Python dengan Homebrew
+		\begin{lstlisting}[language=bash]
+$ brew install python
+		\end{lstlisting}
+	\item Semak Python sudah tamat di install 
+		\begin{lstlisting}[language=bash]
+$ python --version
+Python 3.7.2
+		\end{lstlisting}
+
+\end{enumerate}
