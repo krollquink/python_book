@@ -1,7 +1,7 @@
-\section{}
-Cara Installation
-\subsection{}
-Cara Install Python di dalam Windows
+\chapter{Cara Installation}
+
+\section{Cara Install Python di dalam Windows}
+
 
 \paragraph{}
 Proses install Python ada pelbagai cara untuk semua OS tetapi kali ini , saya akan menunjukkan cara yang paling asas dan mudah.
@@ -10,21 +10,16 @@ Proses install Python ada pelbagai cara untuk semua OS tetapi kali ini , saya ak
 	\item  Untuk Pemasangan di dalam Windows, anda perlu muat turun perisian Python 3 di dalam laman web Python di : 
 
 	\url{https://www.python.org/downloads/windows/}
+	\insertpicture{./img/1.png}
 
-		\begin{figure}[H]
-		\centering
-		\includegraphics[width=10cm]{./img/1.png}
-	\end{figure}
-
-	\item Pilih \textbf{Download Windows} [x86 executable installer] di dalam versi Python yang paling baru dan muat turun
+	\item Pilih \textbf{Download Windows} [x86 executable installer] di dalam versi Py\-thon yang paling baru dan muat turun
 	\item Selepas muat turun, klik dua kali kepada fail yang sudah di muat turun dan mulakan installation Python.
 	\item Selepas installation tamat, anda perlu melakukan configuration untuk Enviroment Variable di dalam Windows untuk membolehkan Python di execute di dalam Command Line
 	\item PATH sudah di set, dan anda boleh mula Program di dalam Python!
 
 \end{enumerate}
 
-\subsection{}
-Cara Install Python di dalam Linux
+\section{Cara Install Python di dalam Linux}
 
 \paragraph{}
 Kebiasaanya, kebanyakan distribution Linux sudah didatangi dengan Python sudah pun siap dipasang. Tetapi, banyak versi Python yang dipasang adalah didalam python versi 2. Untuk memasang python di dalam Linux adalah mudah dengan menggunakan package manager distribution masing-masing. Untuk contoh, buku ini akan menggunakan Ubuntu untuk menunjukkan cara pemasangan Python 3 di dalam Linux.
@@ -44,8 +39,8 @@ $ sudo apt install python python-dev
 		\end{lstlisting}
 \end{enumerate}
 
-\subsection{}
-Cara Install Python di dalam Mac
+\section{Cara Install Python di dalam Mac}
+
 
 \paragraph{}
 Seperti Linux, Mac juga adalah Operating System yang Unix-like yang mempunyai command line tool yang mudah untuk installation python. Dengan mengunakan package manager Homebrew , pengguna Mac dapat membuat installation Python 3 dengan mudah.
@@ -55,10 +50,10 @@ Homebrew tidak terdapat secara default di dalam sesuatu komputer Mac , maka buku
 	\item Buka terminal anda \textbf{Application} > \textbf{Terminal} 
 	\item Jika anda sudah mempunyai Homebrew boleh terus melangkah ke step 4 . Jika tidak , install Homebrew dengan mengunakan command di bawah. 
 		\begin{lstlisting}[language=bash]
-$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/
-Homebrew/install/master/install)"
+$ ruby -e "$(curl -fsSL https://raw.githubusercon
+tent.com/Homebrew/install/master/install)"
 		\end{lstlisting}
-	\item ubah .profile anda dan tambah command di bawah ini supaya boleh mengunakan Homebrew di dalam Terminal. 
+	\item Selepas install ubah \hl{.profile} anda dan tambah command di bawah ini supaya boleh mengunakan Homebrew di dalam Terminal. 
 		\begin{lstlisting}[language=bash]
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 		\end{lstlisting}
@@ -71,5 +66,5 @@ $ brew install python
 $ python --version
 Python 3.7.2
 		\end{lstlisting}
-
+	\item \insertpicture{./img/1.png}
 \end{enumerate}

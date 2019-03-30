@@ -1,5 +1,5 @@
 
-\documentclass[a4paper]{article}
+\documentclass[a4paper]{book}
 \usepackage{hyperref}
 \usepackage{float}
 %packages
@@ -9,11 +9,26 @@
 \usepackage{polyglossia}
 \usepackage{enumitem}
 \usepackage{graphicx}
+%To show coding
 \usepackage{listings}
-\usepackage{color}
+%To highlight text
+\usepackage{color,soul}
+%\usepackage{showframe}
+
+%My Macro!
+
+% To Edit Image
+\newcommand{\insertpicture}[1]{
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=10cm]{#1}
+	\end{figure}
+}
+
 
 
 \begin{document}
 \input{chapter/pengenalan}
 \input{chapter/installation}
+\input{chapter/pythonintroduction}
 \end{document}

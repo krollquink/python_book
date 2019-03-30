@@ -1,0 +1,18 @@
+Chapter 3 : How to Program
+	1. Using Python Interactive Shell
+		explain how to use Python Shell
+		when to use it
+	2. Use IDE or Editor to save it
+	3. Print
+	4. Comment
+	5. Keyword/Indentation
+	6. Data Types
+	7. Constant and Variables
+	8. Syntax
+	9. Error and Exception
+	10. Operator 
+	11. Conditional Statement
+	12. Loops
+	
+
+	
